@@ -25,12 +25,15 @@
           border: 3px solid #f1f1f1;
          z-index: 9;
          top:50%;
-         left: 30%;
+         left: 50%;
          text-align: center;
-         height: 130px;
+         height: 200px;
          background-color: white;
-         padding: 10px;
+         padding: 20px; /* Increased padding for space inside the popup */
+         margin: -100px 0 0 -150px;
+        
         }
+        
         .thank-you-popup .btn {
          background-color: #04AA6D;
          color: white;
@@ -38,6 +41,9 @@
          border: none;
          cursor: pointer;
 
+       }
+       .thank-you-popup p, h3{
+        padding-bottom: 20px;
        }
        .open-button {
          background-color: #555;
@@ -241,9 +247,11 @@
   </form>
 </div>
 <div class="thank-you-popup" id="thankYouPopup">
-  <p>Thank you for submitting the form!</p>
-  <h4>Support@aslimart.co.in</h4>
-  <h4>+91 9542464814</h4>
+  
+  <h3>Thank you for submitting the form!</h3>
+  <p>Contact Number : +91 9542464814</p>
+  <p>E-Mail-Id : Support@aslimart.co.in</p>
+  
   <button type="button" class="btn" onclick="closePopup()">Close</button>
 
 </div>
